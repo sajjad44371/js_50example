@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--font links-->
+
+    <!--css links-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!--icon links-->
+    <title>js</title>
+  </head>
+
+  <body>
+    
+
+    <section class="js_example">
+      <div class="container">
+        <div class="exm text-center">
+          <!-- example1 -->
+          <span class="exm_sp">Example 1</span>
+          <h2 class="mb-0 eh2">Click the button to display message:</h2>
+          <button onclick="showMessage()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="msg"></p>
+          <hr class="chr">
+
+          <!-- example2 -->
+          <span class="exm_sp">Example 2</span>
+          <h2 class="mb-0 eh2">Click the button to display Time and date:</h2>
+          <button onclick="showTimeDate()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="show_date"></p>
+          <hr class="chr">
+
+          <!-- example3 -->
+          <span class="exm_sp">Example 3</span>
+          <h2 class="mb-0 eh2">Click the button:</h2>
+          <button onclick="showSmile()" type="button" class="btn btn_c">Smile</button>
+          <img id="emoji" src="images/smile.png" alt="">
+          <button onclick="showSad()" type="button" class="btn btn_c">Sad</button>
+          <hr class="chr">
+
+          <!-- example4 -->
+          <span class="exm_sp">Example 4</span>
+          <h2 class="mb-0 eh2">Click the button to change the content:</h2>
+          <button onclick="textChange()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="t_change">Welcome!</p>
+          <hr class="chr">
+
+          <!-- example5 -->
+          <span class="exm_sp">Example 5</span>
+          <h2 class="mb-0 eh2">Click the button to change color:</h2>
+          <button onclick="colorChange()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="c_change">Welcome to my project.</p>
+          <hr class="chr">
+
+          <!-- example6 -->
+          <span class="exm_sp">Example 6</span>
+          <h2 class="mb-0 eh2">Click the button to change font size:</h2>
+          <button onclick="fontSizeChange()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="fs_change">Welcome to my project.</p>
+          <hr class="chr">
+
+          <!-- example7 -->
+          <span class="exm_sp">Example 7</span>
+          <h2 class="mb-0 eh2">Click the button to image show/hide:</h2>
+          <button onclick="imageShow()" type="button" class="btn btn_c">Show</button>
+          <button onclick="imageHide()" type="button" class="btn btn_c">Hide</button>
+          <img id="smile" src="images/ssss.jpg" alt="">
+          <hr class="chr">
+
+          <!-- example8 -->
+          <span class="exm_sp">Example 8</span>
+          <h2 class="mb-0 eh2">Click the button to display the sum of two numbers:</h2>
+          <p class="exm_sp">First number: 23 & second number: 7 </p>
+          <button onclick="showSum()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="sum"></p>
+          <hr class="chr">
+
+          <!-- example9 -->
+          <span class="exm_sp">Example 9</span>
+          <h2 class="mb-0 eh2">Click the button to display the subtract of two numbers:</h2>
+          <p class="exm_sp">First number: 23 & second number: 7 </p>
+          <button onclick="showSub()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="sub"></p>
+          <hr class="chr">
+
+          <!-- example10 -->
+          <span class="exm_sp">Example 10</span>
+          <h2 class="mb-0 eh2">Click the button to display the multiplication of two numbers:</h2>
+          <p class="exm_sp">First number: 23 & second number: 7 </p>
+          <button onclick="showMul()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="mul"></p>
+          <hr class="chr">
+
+          <!-- example11 -->
+          <span class="exm_sp">Example 11</span>
+          <h2 class="mb-0 eh2">Click the button to display document:</h2>
+          <button onclick="showDoc()" type="button" class="btn btn_c">Click</button>
+          <p class="output">Never call document.write after the document has finished loading.
+          It will overwrite the whole document.</p>
+          <hr class="chr">
+
+          <!-- example12 -->
+          <span class="exm_sp">Example 12</span>
+          <h2 class="mb-0 eh2">Click the button to display Alert:</h2>
+          <button onclick="showAlert()" type="button" class="btn btn_c">Click</button>
+          <hr class="chr">
+
+          <!-- example13 -->
+          <span class="exm_sp">Example 13</span>
+          <h2 class="mb-0 eh2">Click the button to print this page:</h2>
+          <button onclick="printPage()" type="button" class="btn btn_c">Click</button>
+          <hr class="chr">
+
+          <!-- example14 -->
+          <span class="exm_sp">Example 14</span>
+          <h2 class="mb-0 eh2">Click the button to display the JavaScript statements:</h2>
+          <button onclick="jsStatements()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="stmnt"></p>
+          <hr class="chr">
+
+          <!-- example15 -->
+          <span class="exm_sp">Example 15</span>
+          <h2 class="mb-0 eh2">Click the button to display another JavaScript statements:</h2>
+          <button onclick="jsStatements1()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="stmnt1"></p>
+          <hr class="chr">
+
+          <!-- example16 -->
+          <span class="exm_sp">Example 16</span>
+          <h2 class="mb-0 eh2">Click the button to display double message:</h2>
+          <button onclick="twoMessage()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="demo1"></p>
+          <p class="output" id="demo2"></p>
+          <hr class="chr">
+
+          <!-- example17 -->
+          <span class="exm_sp">Example 17</span>
+          <h2 class="mb-0 eh2">Click the button to display case sensitive:</h2>
+          <button onclick="caseSensitive()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="case"></p>
+          <hr class="chr">
+
+          <!-- example18 -->
+          <span class="exm_sp">Example 18</span>
+          <h2 class="mb-0 eh2">Click the button to display multiple output:</h2>
+          <button onclick="multipleOutput()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="multi"></p>
+          <hr class="chr">
+
+          <!-- example19 -->
+          <span class="exm_sp">Example 19</span>
+          <h2 class="mb-0 eh2">Click the button to display undefined value:</h2>
+          <button onclick="unDefinedValue()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="undefined"></p>
+          <hr class="chr">
+
+          <!-- example20 -->
+          <span class="exm_sp">Example 20</span>
+          <h2 class="mb-0 eh2">Click the button to display Error:</h2>
+          <button onclick="showError()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="error"></p>
+          <hr class="chr">
+
+          <!-- example21 -->
+          <span class="exm_sp">Example 21</span>
+          <h2 class="mb-0 eh2">Click the button to display Array list:</h2>
+          <button onclick="showCarsName()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="arr"></p>
+          <hr class="chr">
+
+          <!-- example22 -->
+          <span class="exm_sp">Example 22</span>
+          <h2 class="mb-0 eh2">Arithmetic Operator:</h2>
+          <button onclick="arithmeticOperator()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="a_op"></p>
+          <hr class="chr">
+
+          <!-- example23 -->
+          <span class="exm_sp">Example 23</span>
+          <h2 class="mb-0 eh2">Assignment Operator:</h2>
+          <button onclick="assignmentOperator()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="as_op"></p>
+          <hr class="chr">
+
+          <!-- example24 -->
+          <span class="exm_sp">Example 24</span>
+          <h2 class="mb-0 eh2">Comparison Operator:</h2>
+          <button onclick="comparisonOperator()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="com_op"></p>
+          <hr class="chr">
+
+          <!-- example25 -->
+          <span class="exm_sp">Example 25</span>
+          <h2 class="mb-0 eh2">Increment Operator:</h2>
+          <button onclick="incrementOperator()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="in_op"></p>
+          <hr class="chr">
+
+          <!-- example26 -->
+          <span class="exm_sp">Example 26</span>
+          <h2 class="mb-0 eh2">Exponentiation Operator:</h2>
+          <button onclick="exponentiationOperator()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="ex_op"></p>
+          <hr class="chr">
+
+          <!-- example27 -->
+          <span class="exm_sp">Example 27</span>
+          <h2 class="mb-0 eh2">Exponentiation Operator type-2 :</h2>
+          <button onclick="exponentiationOperatorTwo()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="ex2_op"></p>
+          <hr class="chr">
+
+          <!-- example28 -->
+          <span class="exm_sp">Example 28</span>
+          <h2 class="mb-0 eh2">BigInt Datatype :</h2>
+          <button onclick="bigintDataType()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="bigint_datatype"></p>
+          <hr class="chr">
+
+          <!-- example29 -->
+          <span class="exm_sp">Example 29</span>
+          <h2 class="mb-0 eh2">Boolean Datatype :</h2>
+          <button onclick="booleanDataType()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="boolean_datatype"></p>
+          <hr class="chr">
+
+          <!-- example30 -->
+          <span class="exm_sp">Example 30</span>
+          <h2 class="mb-0 eh2">Object Datatype :</h2>
+          <button onclick="objectDataType()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="ob_datatype"></p>
+          <hr class="chr">
+
+          <!-- example31 -->
+          <span class="exm_sp">Example 31</span>
+          <h2 class="mb-0 eh2">typeof string Operator :</h2>
+          <button onclick="typeofOperator()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="type_op"></p>
+          <hr class="chr">
+
+          <!-- example32 -->
+          <span class="exm_sp">Example 32</span>
+          <h2 class="mb-0 eh2">typeof number Operator :</h2>
+          <button onclick="typeofNumOperator()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="type_op2"></p>
+          <hr class="chr">
+
+          <!-- example33 -->
+          <span class="exm_sp">Example 33</span>
+          <h2 class="mb-0 eh2">Function :</h2>
+          <button onclick="myFunction(p1, p2)" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="func"></p>
+          <hr class="chr">
+
+
+          <!-- example34 -->
+          <span class="exm_sp">Example 34</span>
+          <h2 class="mb-0 eh2">JavaScript Window :</h2>
+          <button onclick="jsWindow()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="js_win"></p>
+          <hr class="chr">
+
+          <!-- example35 -->
+          <span class="exm_sp">Example 35</span>
+          <h2 class="mb-0 eh2">Open a new Window :</h2>
+          <button onclick="openNewWindow()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="win_open"></p>
+          <hr class="chr">
+
+          <!-- example36 -->
+          <span class="exm_sp">Example 36</span>
+          <h2 class="mb-0 eh2">Close current Window :</h2>
+          <button onclick="closeWindow()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="win_close"></p>
+          <hr class="chr">
+
+          <!-- example37 -->
+          <span class="exm_sp">Example 37</span>
+          <h2 class="mb-0 eh2">Move the current Window :</h2>
+          <button onclick="moveWindow()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="win_move"></p>
+          <hr class="chr">
+
+          <!-- example38 -->
+          <span class="exm_sp">Example 38</span>
+          <h2 class="mb-0 eh2">Resize the current Window :</h2>
+          <button onclick="resizeWindow()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="win_resize"></p>
+          <hr class="chr">
+
+          <!-- example39 -->
+          <span class="exm_sp">Example 39</span>
+          <h2 class="mb-0 eh2">Screen width :</h2>
+          <button onclick="screenWidth()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="sr_width"></p>
+          <hr class="chr">
+
+          <!-- example40 -->
+          <span class="exm_sp">Example 40</span>
+          <h2 class="mb-0 eh2">Screen height :</h2>
+          <button onclick="screenHeight()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="sr_height"></p>
+          <hr class="chr">
+
+          <!-- example41 -->
+          <span class="exm_sp">Example 41</span>
+          <h2 class="mb-0 eh2">Window location :</h2>
+          <button onclick="windowLocation()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="win_loc"></p>
+          <hr class="chr">
+
+          <!-- example42 -->
+          <span class="exm_sp">Example 42</span>
+          <h2 class="mb-0 eh2">Page Hostname :</h2>
+          <button onclick="pageHostName()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="pg_htname"></p>
+          <hr class="chr">
+
+          <!-- example43 -->
+          <span class="exm_sp">Example 43</span>
+          <h2 class="mb-0 eh2">Window location assign :</h2>
+          <button onclick="locationAssign()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="assign_loc"></p>
+          <hr class="chr">
+
+          <!-- example44 -->
+          <span class="exm_sp">Example 44</span>
+          <h2 class="mb-0 eh2">Go back :</h2>
+          <button onclick="goBack()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="back"></p>
+          <hr class="chr">
+
+          <!-- example45 -->
+          <span class="exm_sp">Example 45</span>
+          <h2 class="mb-0 eh2">PopUp confirm box :</h2>
+          <button onclick="popupConfirmBox()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="p_c_box"></p>
+          <hr class="chr">
+
+          <!-- example46 -->
+          <span class="exm_sp">Example 46</span>
+          <h2 class="mb-0 eh2">Prompt box :</h2>
+          <button onclick="promptBox()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="prmt_box"></p>
+          <hr class="chr">
+
+          <!-- example47 -->
+          <span class="exm_sp">Example 47</span>
+          <h2 class="mb-0 eh2">Creating object :</h2>
+          <button onclick="creatObject()" type="button" class="btn btn_c">Click</button>
+          <p class="output" id="c_obj"></p>
+          <hr class="chr">
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--js links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
